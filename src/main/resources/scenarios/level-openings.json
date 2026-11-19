@@ -1,0 +1,130 @@
+{
+  "morning-routine": {
+    "English": {
+      "A1": "Good morning! What do you do first when you wake up?",
+      "A2": "Good morning! Tell me one thing you do every morning.",
+      "B1": "Good morning! What's the first thing you do when you wake up, and how does it help you grow?",
+      "B2": "Good morning! Walk me through your morning routine — which habit sets the tone for your whole day, and why?",
+      "C1": "Good morning! I'm curious how you've designed your morning as a launchpad for growth — what's the first intentional ritual you perform, and what philosophy drives it?"
+    },
+    "Chinese": {
+      "A1": "早上好！你起床第一件事做什么？",
+      "A2": "早上好！说说你每天早上会做的一件事。",
+      "B1": "早上好！你醒来做的第一件事是什么？它如何帮助你成长？",
+      "B2": "早上好！跟我聊聊你的晨间惯例——哪个习惯为一整天定下基调？为什么？",
+      "C1": "早上好！我很想了解你如何把清晨打造成个人成长的起点——你的第一个刻意仪式是什么？背后有什么理念支撑？"
+    }
+  },
+  "career-interview": {
+    "English": {
+      "A1": "Hello! Tell me about one thing you are good at.",
+      "A2": "Hi! Can you tell me about a goal you have for your job?",
+      "B1": "Thanks for joining. Tell me about a time you learned something from a mistake.",
+      "B2": "Welcome. Describe a professional setback you turned into a growth opportunity — what did you learn?",
+      "C1": "Thank you for being here. I'd like to explore your growth mindset — share an instance where you reframed failure as strategic learning and changed your trajectory."
+    },
+    "Chinese": {
+      "A1": "你好！说说你擅长的一件事。",
+      "A2": "你好！说说你的一个工作目标。",
+      "B1": "感谢你来参加。说说你从一次错误中学到了什么。",
+      "B2": "欢迎。描述一次你把职业挫折转化为成长机会的经历——你学到了什么？",
+      "C1": "感谢到场。我想了解你的成长型思维——分享一次你如何将失败重新定义为战略学习，并因此改变了发展轨迹。"
+    }
+  },
+  "networking-event": {
+    "English": {
+      "A1": "Hi! Nice to meet you. What is your name?",
+      "A2": "Hello! What brings you to this event today?",
+      "B1": "Hi there! I heard you mention self-improvement. What brought you to this summit?",
+      "B2": "Great to meet you! I'm always curious what draws people to personal growth events — what's your story?",
+      "C1": "Pleasure to connect! I noticed your enthusiasm for self-development — what frameworks or philosophies anchor your growth journey, and what are you hoping to explore here?"
+    },
+    "Chinese": {
+      "A1": "你好！很高兴认识你。你叫什么名字？",
+      "A2": "你好！今天是什么把你带到这个活动的？",
+      "B1": "你好！刚才听到你提到自我提升。是什么把你带到这场峰会的？",
+      "B2": "很高兴认识你！我很好奇是什么吸引人们参加成长类活动——你的故事是什么？",
+      "C1": "很高兴交流！我注意到你对自我发展很有热情——什么理念框架支撑着你的成长之路？你希望在这次峰会探索什么？"
+    }
+  },
+  "book-club": {
+    "English": {
+      "A1": "Welcome! Did you read a book recently? Which one?",
+      "A2": "Welcome to book club! What is one idea you liked from the book?",
+      "B1": "Welcome! We're discussing 'Atomic Habits'. What's one idea you've tried to apply?",
+      "B2": "Welcome! From 'Atomic Habits', which concept resonated most with you and how have you integrated it into daily life?",
+      "C1": "Welcome to our discussion of 'Atomic Habits'. Which principle challenged your existing beliefs, and how did applying it reshape your identity or systems?"
+    },
+    "Chinese": {
+      "A1": "欢迎！你最近读了一本书吗？哪一本？",
+      "A2": "欢迎参加读书会！书里有哪个观点你比较喜欢？",
+      "B1": "欢迎！我们在讨论《原子习惯》。书中有哪个观点你已经尝试实践了？",
+      "B2": "欢迎！在《原子习惯》中，哪个概念最引起你的共鸣？你是如何融入日常生活的？",
+      "C1": "欢迎讨论《原子习惯》。哪个原则挑战了你原有的信念？实践之后如何重塑了你的身份认同或行为系统？"
+    }
+  },
+  "public-speaking": {
+    "English": {
+      "A1": "You will speak soon! What is your topic?",
+      "A2": "Five minutes! Tell me the main idea of your talk in one sentence.",
+      "B1": "You're on in five minutes! Give me your opening hook — one sentence to grab the audience.",
+      "B2": "Almost time! Craft your opening hook — what story or question will make the audience lean in immediately?",
+      "C1": "You're up shortly. Deliver your opening beat — how will you establish ethos, pathos, and a compelling narrative arc within your first thirty seconds?"
+    },
+    "Chinese": {
+      "A1": "马上轮到你演讲了！你的主题是什么？",
+      "A2": "还有五分钟！用一句话说说你演讲的主要观点。",
+      "B1": "还有五分钟上场！给我你的开场金句——哪一句话能立刻抓住观众？",
+      "B2": "快上场了！设计你的开场钩子——什么故事或问题能让观众立刻被吸引？",
+      "C1": "即将登场。呈现你的开场节拍——你如何在最初三十秒内建立可信度、情感共鸣和引人入胜的叙事弧线？"
+    }
+  },
+  "goal-setting": {
+    "English": {
+      "A1": "Hello! What is one thing you want to do this month?",
+      "A2": "Let's talk about goals. What skill do you want to learn?",
+      "B1": "Looking at the next 90 days, what's one skill you want to develop and why?",
+      "B2": "Quarterly check-in: define one SMART goal for the next 90 days — make it specific, measurable, and meaningful to you.",
+      "C1": "Let's architect your next quarter. Identify one capability that compounds your long-term vision — how will you structure milestones, accountability, and feedback loops?"
+    },
+    "Chinese": {
+      "A1": "你好！这个月你想做的一件事是什么？",
+      "A2": "来聊聊目标。你想学的一项技能是什么？",
+      "B1": "展望接下来 90 天，你最想培养的一项技能是什么？为什么？",
+      "B2": "季度复盘：为接下来 90 天设定一个 SMART 目标——要具体、可衡量，且对你有意义。",
+      "C1": "来规划你的下一季度。找出一项能复利式推动长期愿景的能力——你将如何设计里程碑、问责机制和反馈闭环？"
+    }
+  },
+  "confidence-coaching": {
+    "English": {
+      "A1": "Hi! Is it hard for you to speak in front of people?",
+      "A2": "Hello! Tell me about a time you wanted to speak but didn't.",
+      "B1": "Speaking up can feel hard. Tell me about a recent time you held back when you wished you'd spoken.",
+      "B2": "Confidence grows through practice. Describe a situation where self-doubt silenced you — what would the bolder version of you have said?",
+      "C1": "Owning your voice is an act of self-leadership. Reflect on a moment where you negotiated with self-doubt — what internal narrative held you back, and how might you reframe it?"
+    },
+    "Chinese": {
+      "A1": "你好！在众人面前说话对你来说难吗？",
+      "A2": "你好！说说一次你想说话但没有开口的经历。",
+      "B1": "我知道开口有时很难。说说最近有没有你想说却选择了沉默的情况？",
+      "B2": "自信来自练习。描述一次自我怀疑让你沉默的场景——更勇敢的你本会说什么？",
+      "C1": "掌控自己的声音是一种自我领导力。回顾一次你与自我怀疑博弈的时刻——什么内在叙事拖住了你？你可以如何重构它？"
+    }
+  },
+  "daily-reflection": {
+    "English": {
+      "A1": "Good evening! What made you happy today?",
+      "A2": "Before we finish — one good thing today, and one thing for tomorrow.",
+      "B1": "Before we wrap up — what's one thing you're proud of today, and one thing you'd do differently tomorrow?",
+      "B2": "Evening reflection time. What accomplishment are you grateful for today, and what lesson will you carry into tomorrow?",
+      "C1": "As the day closes, engage in metacognitive reflection — what evidence of growth did you observe today, and how will you iterate your approach tomorrow?"
+    },
+    "Chinese": {
+      "A1": "晚上好！今天有什么让你开心的事？",
+      "A2": "结束之前——今天一件好事，明天想改变的一件事。",
+      "B1": "结束今天之前——今天有一件让你骄傲的事是什么？明天你会尝试哪些不同的改变？",
+      "B2": "晚间反思时间。今天你最感恩的成就是什么？你会把什么教训带到明天？",
+      "C1": "随着一天结束，来做元认知反思——今天你观察到了哪些成长证据？明天你将如何迭代你的行动方式？"
+    }
+  }
+}

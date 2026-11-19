@@ -1,41 +1,78 @@
-# Discourse Context · 语脉
+# LinguaPulse 语脉
 
-> 多语言练习仓库：对照不同语言的上下文脉络，做翻译与写作训练。
-> **A multilingual practice repo: compare how the same idea flows in different languages — translation and writing drills.**
+AI 外语口语 Agent，面向**自我提升行业**——帮助用户在职业成长、习惯养成、公开演讲、社交破冰等场景中练习外语口语。
 
----
+## 核心能力
 
-## What it is · 这个仓库是做什么的
+| 模块 | 说明 |
+|------|------|
+| **SpeakingAgent** | 口语对话 Agent，带完整 System Prompt 与人设 |
+| **8 大场景** | 晨间习惯、面试、社交、读书会、演讲、目标设定、自信教练、晚间反思 |
+| **FeedbackService** | 会话结束后生成流利度/语法/词汇/自信度评分与改进建议 |
+| **LLM 接入** | 支持 OpenAI 兼容 API；无 Key 时自动使用 Mock 演示模式 |
 
-同一段意思，在中文和英文里的表达方式往往不同。重点不在背单词，而在看**上下文如何决定措辞**。
-The point is not vocabulary, but how context decides the wording.
+## 快速开始
 
----
+### 浏览器运行（推荐）
 
-## Structure · 仓库结构
+```powershell
+# 在项目根目录执行
+powershell -ExecutionPolicy Bypass -File run-web.ps1
+```
 
-| 目录 / Folder | 内容 / Content |
-|---|---|
-| `notes/` | 语言对照笔记 / side-by-side language notes |
-| `drills/` | 翻译与改写练习 / translation & rewriting drills |
-| `refs/` | 参考语料与出处 / reference corpus and sources |
+浏览器将自动打开 **http://localhost:8090**
 
----
+> 若 8090 端口被占用，可设置环境变量 `LINGUAPULSE_PORT=8091`
 
-## Examples · 对照示例
+### 命令行运行
 
-| 中文 | English | 说明 / Note |
-|---|---|---|
-| 语脉 | discourse context | “脉”指上下文线索的连贯性 / the "thread" of context |
-| 循语脉而译 | translate along the thread of discourse | 保留比喻色彩 / keeps the metaphor |
-| 语境决定措辞 | context decides the wording | 本仓库的核心方法 / the core method here |
+```bash
+mvn clean package
+java -jar target/LinguaPulse-1.0-SNAPSHOT.jar --cli
+```
 
----
+## 环境变量
 
-## Log · 练习记录
+| 变量 | 默认值 | 说明 |
+|------|--------|------|
+| `OPENAI_API_KEY` | — | API 密钥，未设置则使用 Mock |
+| `OPENAI_BASE_URL` | `https://api.openai.com/v1` | 兼容 OpenAI 的 API 地址 |
+| `OPENAI_MODEL` | `gpt-4o-mini` | 模型名称 |
 
-- 2026-11-19 — 建立仓库，确定中英对照格式 / repo created, bilingual format fixed
+## 项目结构
 
----
+```
+src/main/java/org/linguapulse/
+├── LinguaPulseApp.java          # CLI 入口
+├── agent/
+│   ├── SpeakingAgent.java       # 口语 Agent 核心
+│   ├── AgentConfig.java         # 配置（语言、水平、教练名）
+│   └── AgentPersona.java        # 人设与 Prompt 构建
+├── prompt/
+│   └── PromptTemplates.java     # System Prompt 模板
+├── model/                       # 消息、场景、会话、反馈
+├── service/
+│   ├── ScenarioService.java     # 场景加载
+│   └── FeedbackService.java     # 反馈生成
+└── llm/                         # LLM 客户端
+```
 
+## Agent 人设
 
+教练 **Alex** 是一位自我提升领域的口语导师：
+
+- 温暖鼓励，强调成长型思维
+- 每次回复 2-4 句，引导用户多说
+- 围绕场景自然融入关键词汇
+- 在用户卡壳时提供 scaffold 句式
+
+## 在 Cursor 中使用
+
+项目包含 `.cursor/skills/lingua-speaking-agent/SKILL.md`，可在 Cursor 中直接调用该 Skill 进行口语陪练。
+
+## 后续扩展
+
+- 语音输入/输出（ASR + TTS）
+- Web / 移动端 UI
+- 学习进度持久化与复习计划
+- 多 Agent 角色（面试官、书友、演讲教练）

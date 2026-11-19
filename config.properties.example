@@ -1,0 +1,20 @@
+# LinguaPulse AI 配置
+# 复制此文件为 config.properties 并填入你的 API Key
+
+# DeepSeek（推荐，国内可用）
+llm.provider=deepseek
+llm.api.key=sk-your-deepseek-key
+llm.base.url=https://api.deepseek.com/v1
+llm.model=deepseek-chat
+
+# OpenAI
+# llm.provider=openai
+# llm.api.key=sk-your-openai-key
+# llm.base.url=https://api.openai.com/v1
+# llm.model=gpt-4o-mini
+
+# 通义千问
+# llm.provider=qwen
+# llm.api.key=sk-your-qwen-key
+# llm.base.url=https://dashscope.aliyuncs.com/compatible-mode/v1
+# llm.model=qwen-plus
