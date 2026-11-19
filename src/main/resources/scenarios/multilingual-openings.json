@@ -1,0 +1,123 @@
+{
+  "morning-routine": {
+    "French": {
+      "A1": "Bonjour ! Qu'est-ce que tu fais en premier quand tu te réveilles ?",
+      "A2": "Bonjour ! Dis-moi une chose que tu fais chaque matin.",
+      "B1": "Bonjour ! Quelle est la première chose que tu fais en te réveillant, et comment cela t'aide-t-il à grandir ?",
+      "B2": "Bonjour ! Décrivez-moi votre routine matinale — quelle habitude donne le ton à toute votre journée, et pourquoi ?",
+      "C1": "Bonjour ! Je suis curieux de savoir comment vous avez conçu votre matinée comme tremplin de croissance — quel est votre premier rituel intentionnel, et quelle philosophie le guide ?"
+    },
+    "Japanese": {
+      "A1": "おはよう！起きて最初に何をしますか？",
+      "A2": "おはよう！毎朝していることを一つ教えてください。",
+      "B1": "おはようございます！目覚めて最初にすることは何ですか？それはどう成長につながっていますか？",
+      "B2": "おはようございます！朝のルーティンを教えてください。一日の調子を決める習慣は何ですか？",
+      "C1": "おはようございます。朝を成長の起点としてどう設計しましたか？最初の意図的な儀式と、その背景にある考えを聞かせてください。"
+    },
+    "Spanish": {
+      "A1": "¡Buenos días! ¿Qué haces primero cuando te despiertas?",
+      "A2": "¡Buenos días! Cuéntame una cosa que haces cada mañana.",
+      "B1": "¡Buenos días! ¿Qué es lo primero que haces al despertar y cómo te ayuda a crecer?",
+      "B2": "¡Buenos días! Cuéntame tu rutina matutina — ¿qué hábito marca el tono de todo tu día y por qué?",
+      "C1": "¡Buenos días! Me intriga cómo has diseñado tu mañana como plataforma de crecimiento — ¿cuál es tu primer ritual intencional y qué filosofía lo impulsa?"
+    }
+  },
+  "career-interview": {
+    "French": {
+      "B1": "Merci d'être venu. Parlez-moi d'un moment où vous avez tiré une leçon d'une erreur.",
+      "B2": "Bienvenue. Décrivez un revers professionnel que vous avez transformé en opportunité de croissance — qu'avez-vous appris ?"
+    },
+    "Japanese": {
+      "B1": "今日はありがとうございます。失敗から学んだ経験を教えてください。",
+      "B2": "ようこそ。挫折を成長の機会に変えた経験を描写してください。何を学びましたか？"
+    },
+    "Spanish": {
+      "B1": "Gracias por venir. Cuéntame una ocasión en la que aprendiste de un error.",
+      "B2": "Bienvenido. Describe un contratiempo profesional que convertiste en oportunidad de crecimiento — ¿qué aprendiste?"
+    }
+  },
+  "networking-event": {
+    "French": {
+      "B1": "Bonjour ! J'ai entendu que vous parliez de développement personnel. Qu'est-ce qui vous a amené ici ?",
+      "B2": "Ravi de vous rencontrer ! Qu'est-ce qui vous attire dans les événements de croissance personnelle — quelle est votre histoire ?"
+    },
+    "Japanese": {
+      "B1": "こんにちは！自己成長の話を聞きました。このイベントに来た理由は？",
+      "B2": "お会いできて嬉しいです。自己成長イベントに惹かれる理由は何ですか？"
+    },
+    "Spanish": {
+      "B1": "¡Hola! Escuché que mencionabas superación personal. ¿Qué te trajo a este evento?",
+      "B2": "¡Encantado de conocerte! ¿Qué te atrae de los eventos de crecimiento personal — cuál es tu historia?"
+    }
+  },
+  "book-club": {
+    "French": {
+      "B1": "Bienvenue ! Nous discutons de « Atomic Habits ». Quelle idée du livre avez-vous essayé d'appliquer ?",
+      "B2": "Bienvenue ! Dans « Atomic Habits », quel concept vous a le plus parlé et comment l'avez-vous intégré au quotidien ?"
+    },
+    "Japanese": {
+      "B1": "ようこそ！今週は『Atomic Habits』について話します。実践したアイデアはありますか？",
+      "B2": "ようこそ！この本で最も共感した概念は何ですか？日常にどう取り入れましたか？"
+    },
+    "Spanish": {
+      "B1": "¡Bienvenido! Discutimos « Atomic Habits ». ¿Qué idea del libro has intentado aplicar?",
+      "B2": "¡Bienvenido! De « Atomic Habits », ¿qué concepto te resonó más y cómo lo integraste en tu vida diaria?"
+    }
+  },
+  "public-speaking": {
+    "French": {
+      "B1": "C'est dans cinq minutes ! Donnez-moi votre accroche — une phrase pour capter l'audience.",
+      "B2": "Presque l'heure ! Quelle histoire ou question fera pencher l'audience dès le début ?"
+    },
+    "Japanese": {
+      "B1": "あと5分です！聴衆を引き込むオープニングの一文をください。",
+      "B2": "もうすぐです！聴衆を惹きつけるストーリーや質問は何ですか？"
+    },
+    "Spanish": {
+      "B1": "¡En cinco minutos! Dame tu gancho de apertura — una frase para captar al público.",
+      "B2": "¡Casi es la hora! ¿Qué historia o pregunta hará que el público se incline de inmediato?"
+    }
+  },
+  "goal-setting": {
+    "French": {
+      "B1": "Pour les 90 prochains jours, quelle compétence voulez-vous développer et pourquoi ?",
+      "B2": "Bilan trimestriel : définissez un objectif SMART pour les 90 prochains jours — précis, mesurable et significatif."
+    },
+    "Japanese": {
+      "B1": "今後90日間で身につけたいスキルは何ですか？なぜ重要ですか？",
+      "B2": "四半期チェックイン：次の90日間のSMART目標を設定してください。"
+    },
+    "Spanish": {
+      "B1": "En los próximos 90 días, ¿qué habilidad quieres desarrollar y por qué?",
+      "B2": "Revisión trimestral: define una meta SMART para los próximos 90 días — específica, medible y significativa."
+    }
+  },
+  "confidence-coaching": {
+    "French": {
+      "B1": "Prendre la parole peut être difficile. Racontez un moment récent où vous vous êtes retenu.",
+      "B2": "La confiance vient avec la pratique. Décrivez une situation où le doute vous a fait taire — que dirait la version plus audacieuse de vous ?"
+    },
+    "Japanese": {
+      "B1": "発言するのは難しいですよね。最近、言いたかったのに黙ってしまった経験は？",
+      "B2": "自信は練習から生まれます。自己疑念で黙ってしまった場面を描写してください。"
+    },
+    "Spanish": {
+      "B1": "Hablar en público puede ser difícil. Cuéntame una ocasión reciente en la que te contuviste.",
+      "B2": "La confianza crece con la práctica. Describe una situación donde la duda te silenció — ¿qué habría dicho tu versión más valiente?"
+    }
+  },
+  "daily-reflection": {
+    "French": {
+      "B1": "Avant de terminer — de quoi êtes-vous fier aujourd'hui, et que feriez-vous différemment demain ?",
+      "B2": "Moment de réflexion du soir. Pour quelle réussite êtes-vous reconnaissant aujourd'hui, et quelle leçon emporterez-vous demain ?"
+    },
+    "Japanese": {
+      "B1": "今日を終える前に——今日誇りに思うことと、明日変えたいことは？",
+      "B2": "夕方の振り返り。今日感謝している成果と、明日持ち越す教訓は何ですか？"
+    },
+    "Spanish": {
+      "B1": "Antes de terminar — ¿de qué estás orgulloso hoy y qué harías diferente mañana?",
+      "B2": "Momento de reflexión nocturna. ¿Por qué logro estás agradecido hoy y qué lección llevarás mañana?"
+    }
+  }
+}
