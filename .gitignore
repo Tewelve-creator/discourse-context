@@ -1,0 +1,17 @@
+target/
+*.class
+*.jar
+*.war
+.idea/
+.vscode/
+.cursor/
+*.iml
+.deps/
+*.zip
+*.rar
+*.7z
+config.properties
+*.env
+.DS_Store
+Thumbs.db
+*.log
