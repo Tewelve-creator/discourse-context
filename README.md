@@ -38,10 +38,4 @@ The point is not vocabulary, but how context decides the wording.
 
 ---
 
-## Usage · 使用方式
 
-纯 Markdown，可直接在 GitHub 网页上编辑。
-Pure Markdown — edit directly on the GitHub web page.
-
-```bash
-git clone <repo-url>
