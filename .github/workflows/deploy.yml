@@ -1,0 +1,22 @@
+name: Deploy LinguaPulse
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH connect & deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.WSL_HOST }}
+          username: ${{ secrets.WSL_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/twelve/LinguaPulse
+            git pull
+            mvn clean package -DskipTests
+            pkill -f LinguaPulse
+            nohup java -jar target/LinguaPulse-1.0-SNAPSHOT.jar > app.log 2>&1 &
