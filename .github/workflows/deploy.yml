@@ -1,0 +1,44 @@
+name: Deploy to Rainyun Server
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Copy Source Code to Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          source: "."
+          target: "/root/yumai_project/"
+          rm: true 
+          exclude: ".git*,target,node_modules,.idea"
+
+      - name: Execute Remote SSH to Deploy with Docker
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /root/yumai_project
+            
+            # 处理配置文件
+            if [ ! -f config.properties ]; then
+              cp config.properties.example config.properties
+              echo "已生成初始配置文件 config.properties"
+            fi
+            
+            # 使用 Docker 构建并启动
+            docker compose down
+            docker compose up -d --build
+            
+            echo "Docker 部署完成！"
