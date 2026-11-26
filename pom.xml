@@ -33,6 +33,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.2.5</version>
+                <configuration>
+                    <!-- 关键修改：明确指定唯一的 Web 启动入口 -->
+                    <mainClass>org.linguapulse.LinguaPulseWebApp</mainClass>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
