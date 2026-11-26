@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web-app:
+    build: .
+    container_name: yumai-app
+    ports:
+      - "8080:8080" # 左边是服务器对外暴露的端口，右边是项目内部运行的端口
+    # 如果你在本地没有把 config.properties 写死，可以通过这里的环境变量传入
+    # environment:
+    #   - SPRING_DATASOURCE_URL=jdbc:mysql://your-db-ip:3306/db
+    restart: always
