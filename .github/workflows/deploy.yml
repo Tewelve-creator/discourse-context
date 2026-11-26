@@ -1,22 +1,44 @@
-name: Deploy LinguaPulse
+name: Deploy to Rainyun Server
+
 on:
   push:
     branches: [ main ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: SSH connect & deploy
-        uses: appleboy/ssh-action@master
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      
+      - name: Copy Source Code to Server
+        uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.WSL_HOST }}
-          username: ${{ secrets.WSL_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          source: "."
+          target: "/root/yumai_project/"
+          rm: true 
+          exclude: ".git*,target,node_modules,.idea"
+
+      - name: Execute Remote SSH to Deploy with Docker
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /home/twelve/LinguaPulse
-            git pull
-            mvn clean package -DskipTests
-            pkill -f LinguaPulse
-            nohup java -jar target/LinguaPulse-1.0-SNAPSHOT.jar > app.log 2>&1 &
+            cd /root/yumai_project
+            
+            # 处理配置文件
+            if [ ! -f config.properties ]; then
+              cp config.properties.example config.properties
+              echo "已生成初始配置文件 config.properties"
+            fi
+            
+            # 使用 Docker 构建并启动
+            docker compose down
+            docker compose up -d --build
+            
+            echo "Docker 部署完成！"
